@@ -1,0 +1,25 @@
+{
+  "name": "prettite",
+  "displayName": "Prettite",
+  "description": "Effortlessly format C and Java code for consistency and readability.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.83.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "java",
+      "aliases": ["java, c", "java"],
+      "extensions": [".java",".c"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "java",
+      "scopeName": "",
+      "path": "./syntaxes/java.tmLanguage.json"
+    }]
+  }
+}
